@@ -237,7 +237,7 @@ def train(args, loader, generator, discriminator, g_optim, d_optim, g_ema, devic
         g_loss.backward()
         g_optim.step()
 
-        g_regularize = False#i % args.g_reg_every == 0
+        g_regularize = i % args.g_reg_every == 0
 
         if g_regularize:
             path_batch_size = max(1, args.batch // args.path_batch_shrink)

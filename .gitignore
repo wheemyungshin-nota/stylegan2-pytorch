@@ -1,3 +1,8 @@
+checkpoint/
+alpha_all_ir/
+beta_all_ir/
+source_of_zigbang/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
